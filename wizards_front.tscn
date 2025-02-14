@@ -1,0 +1,413 @@
+[gd_scene load_steps=33 format=3 uid="uid://dnqe4ldx4jcnu"]
+
+[ext_resource type="Texture2D" uid="uid://q6udiadvanrh" path="res://Images/wizardsProfileBarsHUDFront1.png" id="1_pb50r"]
+[ext_resource type="Texture2D" uid="uid://obqcu1v134i3" path="res://Images/Insight Age Images/wizardsProfileInsightProgress.png" id="3_0toji"]
+[ext_resource type="Texture2D" uid="uid://bffu0yptkymx1" path="res://Images/Insight Age Images/wizardsProfileInsightBack.png" id="3_bs0kd"]
+[ext_resource type="Texture2D" uid="uid://boa3cjxaq8kqc" path="res://Images/Extras Images/wizardsInterfaceEclipse.png" id="5_nrros"]
+[ext_resource type="Script" path="res://Scripts/insight_bar.gd" id="5_sxrt7"]
+[ext_resource type="FontFile" uid="uid://cg6brwyih042d" path="res://Candara.ttf" id="6_ilynv"]
+[ext_resource type="Script" path="res://Scripts/insight_bar_con.gd" id="6_nuo65"]
+[ext_resource type="Script" path="res://Scripts/Insight.gd" id="7_s3rly"]
+[ext_resource type="Script" path="res://Scripts/age_bar.gd" id="9_ajpw2"]
+[ext_resource type="Script" path="res://Scripts/Age.gd" id="10_1bcla"]
+[ext_resource type="Texture2D" uid="uid://dj4dontgvjgwq" path="res://Images/Stars Images/wizardsProfileStarsBack.png" id="11_50o0f"]
+[ext_resource type="Texture2D" uid="uid://d2ovqjperilux" path="res://Images/Stars Images/wizardsProfileStarsFront.png" id="12_k4imy"]
+[ext_resource type="Texture2D" uid="uid://b37fdss652iwb" path="res://Images/Stars Images/wizardsProfileStarsProgress.png" id="13_b3x6l"]
+[ext_resource type="Script" path="res://Scripts/corruption_bar.gd" id="14_j7d7j"]
+[ext_resource type="Texture2D" uid="uid://gjok3eudfsvg" path="res://Images/Stars Images/wizardsProfileStarsCircleBack.png" id="15_8f2q2"]
+[ext_resource type="Texture2D" uid="uid://c1o7ayc3dg44j" path="res://Images/Extras Images/wizardsInterfaceEyes.png" id="16_cnwid"]
+[ext_resource type="Texture2D" uid="uid://dsyav8rewcscr" path="res://Images/Stars Images/wizardsProfileStarsCircleProgress.png" id="16_mw5bu"]
+[ext_resource type="Script" path="res://Scripts/corruption_bar_circle.gd" id="17_kwlc2"]
+[ext_resource type="Script" path="res://Scripts/corruption_bar_pur.gd" id="18_6wsbj"]
+[ext_resource type="Script" path="res://Scripts/Corruption.gd" id="18_n7ipl"]
+[ext_resource type="Texture2D" uid="uid://cbywvpi6rw8br" path="res://Images/Potion Images/wizardsProfilePotionBack.png" id="19_26em0"]
+[ext_resource type="Texture2D" uid="uid://b4navqcvjdrlh" path="res://Images/Potion Images/wizardsProfilePotionFront.png" id="20_wbs1t"]
+[ext_resource type="Texture2D" uid="uid://c1h8pg7r0bs1r" path="res://Images/Potion Images/wizardsProfilePotionProgress.png" id="21_0n4or"]
+[ext_resource type="Texture2D" uid="uid://c4q7l883g7vkq" path="res://Images/Extras Images/wizardsInterfaceCrown.png" id="21_47mwj"]
+[ext_resource type="Script" path="res://Scripts/toxicity_bar.gd" id="22_xnpse"]
+[ext_resource type="Script" path="res://Scripts/Toxicity.gd" id="23_7gxxf"]
+[ext_resource type="Texture2D" uid="uid://by5sdk7my8jmk" path="res://Images/Gear Images/wizardsProfileGearBack.png" id="24_8eeag"]
+[ext_resource type="Script" path="res://Scripts/toxicity_bar_dom.gd" id="24_b41le"]
+[ext_resource type="Texture2D" uid="uid://csciwh8n27dei" path="res://Images/Gear Images/wizardsProfileGearProgress.png" id="25_7c1va"]
+[ext_resource type="Script" path="res://Scripts/gear_bar.gd" id="26_nk2qy"]
+[ext_resource type="Script" path="res://Scripts/playerNameChanger.gd" id="27_8bs4d"]
+[ext_resource type="Script" path="res://Scripts/deez_nuts_number.gd" id="32_0hqqm"]
+
+[node name="WizardsFront" type="Sprite2D"]
+position = Vector2(911, 595)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_pb50r")
+
+[node name="Insight" type="Node2D" parent="."]
+
+[node name="InsightBar" type="TextureProgressBar" parent="Insight"]
+offset_left = -280.0
+offset_top = 294.0
+offset_right = 280.0
+offset_bottom = 383.0
+max_value = 20.0
+value = 13.0
+nine_patch_stretch = true
+texture_under = ExtResource("3_bs0kd")
+texture_progress = ExtResource("3_0toji")
+tint_progress = Color(0.324548, 0.54516, 0.37724, 1)
+script = ExtResource("5_sxrt7")
+
+[node name="ConCircle" type="TextureProgressBar" parent="Insight"]
+visible = false
+offset_left = -280.0
+offset_top = -201.429
+offset_right = 280.0
+offset_bottom = -112.429
+rotation = -3.14159
+scale = Vector2(0.375142, 2.32685)
+pivot_offset = Vector2(279.217, 43.6718)
+max_value = 20.0
+fill_mode = 4
+nine_patch_stretch = true
+texture_progress = ExtResource("5_nrros")
+script = ExtResource("6_nuo65")
+
+[node name="Insight" type="Label" parent="Insight"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -67.1431
+offset_top = 300.0
+offset_right = 63.8569
+offset_bottom = 381.0
+grow_horizontal = 2
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("6_ilynv")
+theme_override_font_sizes/font_size = 57
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("7_s3rly")
+
+[node name="InsightSub" type="Button" parent="Insight"]
+offset_left = -310.0
+offset_top = 310.0
+offset_right = -277.0
+offset_bottom = 367.0
+text = "-"
+
+[node name="InsightPlus" type="Button" parent="Insight"]
+offset_left = 277.0
+offset_top = 310.0
+offset_right = 310.0
+offset_bottom = 367.0
+text = "+"
+
+[node name="ConToggle" type="Button" parent="Insight"]
+offset_left = -15.7143
+offset_top = 452.857
+offset_right = 15.2857
+offset_bottom = 478.857
+
+[node name="Age" type="Node2D" parent="."]
+
+[node name="AgeBar" type="TextureProgressBar" parent="Age"]
+offset_left = -280.0
+offset_top = 377.0
+offset_right = 280.0
+offset_bottom = 469.0
+max_value = 20.0
+value = 19.0
+nine_patch_stretch = true
+texture_under = ExtResource("3_bs0kd")
+texture_progress = ExtResource("3_0toji")
+tint_progress = Color(0.293492, 0.3727, 0.693174, 1)
+script = ExtResource("9_ajpw2")
+
+[node name="Age" type="Label" parent="Age"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -65.714
+offset_top = 382.857
+offset_right = 65.286
+offset_bottom = 463.857
+grow_horizontal = 2
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("6_ilynv")
+theme_override_font_sizes/font_size = 57
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("10_1bcla")
+
+[node name="AgePlus" type="Button" parent="Age"]
+offset_left = 277.143
+offset_top = 394.286
+offset_right = 310.143
+offset_bottom = 451.286
+text = "+"
+
+[node name="AgeSub" type="Button" parent="Age"]
+offset_left = -310.0
+offset_top = 394.286
+offset_right = -277.0
+offset_bottom = 451.286
+text = "-"
+
+[node name="AgeMaxPlus" type="Button" parent="Age"]
+offset_left = 275.714
+offset_top = 455.714
+offset_right = 309.714
+offset_bottom = 477.714
+
+[node name="AgeMaxSub" type="Button" parent="Age"]
+offset_left = -310.0
+offset_top = 455.714
+offset_right = -276.0
+offset_bottom = 477.714
+
+[node name="Corruption" type="Node2D" parent="."]
+
+[node name="CorruptionBar" type="TextureProgressBar" parent="Corruption"]
+offset_left = 257.143
+offset_top = -112.857
+offset_right = 363.143
+offset_bottom = 262.143
+max_value = 20.0
+fill_mode = 3
+nine_patch_stretch = true
+texture_under = ExtResource("11_50o0f")
+texture_over = ExtResource("12_k4imy")
+texture_progress = ExtResource("13_b3x6l")
+script = ExtResource("14_j7d7j")
+
+[node name="CorruptionBarCircle" type="TextureProgressBar" parent="Corruption"]
+offset_left = 309.0
+offset_top = 207.0
+offset_right = 414.0
+offset_bottom = 314.0
+max_value = 20.0
+fill_mode = 3
+nine_patch_stretch = true
+texture_under = ExtResource("15_8f2q2")
+texture_progress = ExtResource("16_mw5bu")
+script = ExtResource("17_kwlc2")
+
+[node name="PurEyes" type="TextureProgressBar" parent="Corruption"]
+visible = false
+offset_left = -312.857
+offset_top = -435.714
+offset_right = -206.857
+offset_bottom = -60.7143
+scale = Vector2(5.88873, 1.59771)
+max_value = 20.0
+fill_mode = 3
+nine_patch_stretch = true
+texture_progress = ExtResource("16_cnwid")
+script = ExtResource("18_6wsbj")
+
+[node name="Corruption" type="Label" parent="Corruption"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 297.143
+offset_top = 221.429
+offset_right = 428.143
+offset_bottom = 302.429
+grow_horizontal = 2
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("6_ilynv")
+theme_override_font_sizes/font_size = 67
+text = "20"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("18_n7ipl")
+
+[node name="CorruptionPlus" type="Button" parent="Corruption"]
+offset_left = 283.0
+offset_top = -146.0
+offset_right = 310.0
+offset_bottom = -115.0
+text = "+"
+
+[node name="CorruptionSub" type="Button" parent="Corruption"]
+offset_left = 282.857
+offset_top = 260.0
+offset_right = 309.857
+offset_bottom = 291.0
+text = "-"
+
+[node name="PurToggle" type="Button" parent="Corruption"]
+offset_left = -47.1429
+offset_top = 452.857
+offset_right = -16.1429
+offset_bottom = 478.857
+
+[node name="Toxicity" type="Node2D" parent="."]
+
+[node name="ToxicityBar" type="TextureProgressBar" parent="Toxicity"]
+offset_left = -382.857
+offset_top = -90.0
+offset_right = -236.857
+offset_bottom = 274.0
+max_value = 20.0
+fill_mode = 3
+nine_patch_stretch = true
+texture_under = ExtResource("19_26em0")
+texture_over = ExtResource("20_wbs1t")
+texture_progress = ExtResource("21_0n4or")
+script = ExtResource("22_xnpse")
+
+[node name="DomCrown" type="TextureProgressBar" parent="Toxicity"]
+visible = false
+offset_left = -85.7143
+offset_top = -225.714
+offset_right = 290.286
+offset_bottom = 137.286
+scale = Vector2(0.452209, 0.452209)
+max_value = 20.0
+value = 20.0
+fill_mode = 3
+nine_patch_stretch = true
+texture_progress = ExtResource("21_47mwj")
+script = ExtResource("24_b41le")
+
+[node name="ToxicityPlus" type="Button" parent="Toxicity"]
+offset_left = -310.0
+offset_top = -145.714
+offset_right = -283.0
+offset_bottom = -114.714
+text = "+"
+
+[node name="ToxicitySub" type="Button" parent="Toxicity"]
+offset_left = -310.0
+offset_top = 260.0
+offset_right = -283.0
+offset_bottom = 291.0
+text = "-"
+
+[node name="Toxicity" type="Label" parent="Toxicity"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -374.286
+offset_top = 172.857
+offset_right = -243.286
+offset_bottom = 253.857
+grow_horizontal = 2
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("6_ilynv")
+theme_override_font_sizes/font_size = 67
+text = "20"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("23_7gxxf")
+
+[node name="DomToggle" type="Button" parent="Toxicity"]
+offset_left = 14.2857
+offset_top = 452.857
+offset_right = 45.2857
+offset_bottom = 478.857
+
+[node name="Gear" type="Node2D" parent="."]
+
+[node name="GearBar" type="TextureProgressBar" parent="Gear"]
+offset_left = -138.571
+offset_top = 208.571
+offset_right = 139.429
+offset_bottom = 299.571
+max_value = 3.0
+nine_patch_stretch = true
+texture_under = ExtResource("24_8eeag")
+texture_progress = ExtResource("25_7c1va")
+script = ExtResource("26_nk2qy")
+
+[node name="GearPlus" type="Button" parent="Gear"]
+offset_left = 134.286
+offset_top = 254.286
+offset_right = 155.286
+offset_bottom = 285.286
+text = "+"
+
+[node name="GearSub" type="Button" parent="Gear"]
+offset_left = -155.714
+offset_top = 254.286
+offset_right = -134.714
+offset_bottom = 285.286
+text = "-"
+
+[node name="PlayerName" type="LineEdit" parent="."]
+offset_left = -136.0
+offset_top = 161.0
+offset_right = 137.0
+offset_bottom = 221.0
+theme_override_fonts/font = ExtResource("6_ilynv")
+theme_override_font_sizes/font_size = 51
+placeholder_text = "Placeholder"
+alignment = 1
+flat = true
+script = ExtResource("27_8bs4d")
+
+[node name="Deez Nuts" type="Node2D" parent="."]
+position = Vector2(-47.1428, -430)
+scale = Vector2(2.35574, 2.35574)
+
+[node name="Deez" type="Label" parent="Deez Nuts"]
+offset_left = 11.522
+offset_top = -6.06422
+offset_right = 51.522
+offset_bottom = 16.9358
+scale = Vector2(0.401998, 0.401998)
+text = "Deez"
+
+[node name="Deez Nuts Number" type="Label" parent="Deez Nuts"]
+offset_right = 40.0
+offset_bottom = 29.0
+scale = Vector2(1.00454, 1.00454)
+theme_override_fonts/font = ExtResource("6_ilynv")
+theme_override_font_sizes/font_size = 28
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("32_0hqqm")
+
+[node name="Nuts" type="Label" parent="Deez Nuts"]
+offset_left = 9.70275
+offset_top = 22.4376
+offset_right = 49.7028
+offset_bottom = 45.4376
+scale = Vector2(0.509541, 0.509541)
+text = "Nuts"
+
+[node name="DeezNutsUp" type="Button" parent="Deez Nuts"]
+offset_left = 20.0119
+offset_top = -11.522
+offset_right = 28.0119
+offset_bottom = -3.52203
+theme_override_font_sizes/font_size = 8
+clip_text = true
+
+[node name="DeezNutsDown" type="Button" parent="Deez Nuts"]
+offset_left = 12.1285
+offset_top = -12.1285
+offset_right = 20.1285
+offset_bottom = -4.12846
+theme_override_font_sizes/font_size = 8
+clip_text = true
+
+[connection signal="pressed" from="Insight/InsightSub" to="Insight/Insight" method="_on_insight_sub_pressed"]
+[connection signal="pressed" from="Insight/InsightPlus" to="Insight/Insight" method="_on_insight_plus_pressed"]
+[connection signal="pressed" from="Insight/ConToggle" to="Insight/ConCircle" method="_on_con_toggle_pressed"]
+[connection signal="pressed" from="Age/AgePlus" to="Age/Age" method="_on_age_plus_pressed"]
+[connection signal="pressed" from="Age/AgeSub" to="Age/Age" method="_on_age_sub_pressed"]
+[connection signal="pressed" from="Age/AgeMaxPlus" to="Age/Age" method="_on_age_max_plus_pressed"]
+[connection signal="pressed" from="Age/AgeMaxSub" to="Age/Age" method="_on_age_max_sub_pressed"]
+[connection signal="pressed" from="Corruption/CorruptionPlus" to="Corruption/Corruption" method="_on_corruption_plus_pressed"]
+[connection signal="pressed" from="Corruption/CorruptionSub" to="Corruption/Corruption" method="_on_corruption_sub_pressed"]
+[connection signal="pressed" from="Corruption/PurToggle" to="Corruption/PurEyes" method="_on_pur_toggle_pressed"]
+[connection signal="pressed" from="Toxicity/ToxicityPlus" to="Toxicity/Toxicity" method="_on_toxicity_plus_pressed"]
+[connection signal="pressed" from="Toxicity/ToxicitySub" to="Toxicity/Toxicity" method="_on_toxicity_sub_pressed"]
+[connection signal="pressed" from="Toxicity/DomToggle" to="Toxicity/DomCrown" method="_on_dom_toggle_pressed"]
+[connection signal="pressed" from="Gear/GearPlus" to="Gear/GearBar" method="_on_gear_plus_pressed"]
+[connection signal="pressed" from="Gear/GearSub" to="Gear/GearBar" method="_on_gear_sub_pressed"]
+[connection signal="text_changed" from="PlayerName" to="PlayerName" method="_on_text_changed"]
+[connection signal="text_submitted" from="PlayerName" to="PlayerName" method="_on_text_submitted"]
+[connection signal="pressed" from="Deez Nuts/DeezNutsUp" to="Deez Nuts/Deez Nuts Number" method="_on_deez_nuts_up_pressed"]
+[connection signal="pressed" from="Deez Nuts/DeezNutsDown" to="Deez Nuts/Deez Nuts Number" method="_on_deez_nuts_down_pressed"]

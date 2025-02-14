@@ -1,0 +1,154 @@
+[gd_scene load_steps=7 format=3 uid="uid://b3wk31w2gec8q"]
+
+[ext_resource type="PackedScene" uid="uid://dnqe4ldx4jcnu" path="res://wizards_front.tscn" id="2_jui5v"]
+[ext_resource type="Texture2D" uid="uid://db866ixjdmyqj" path="res://Images/wizardsProfilesFunCounter.png" id="2_t3x6g"]
+[ext_resource type="FontFile" uid="uid://cqnw1curef2mc" path="res://Riseria-Regular.ttf" id="3_66ggb"]
+[ext_resource type="Script" path="res://Scripts/saver_loader.gd" id="3_ch1lc"]
+[ext_resource type="Script" path="res://Scripts/fun_number.gd" id="4_abwd4"]
+
+[sub_resource type="GDScript" id="GDScript_bum2i"]
+script/source = "extends CanvasLayer
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="Main" type="Node2D"]
+position = Vector2(85, 577)
+metadata/_edit_vertical_guides_ = [960.0]
+
+[node name="Wizards HUD" type="Node2D" parent="."]
+
+[node name="HUD" type="CanvasLayer" parent="Wizards HUD"]
+script = SubResource("GDScript_bum2i")
+
+[node name="Orion" parent="Wizards HUD/HUD" groups=["WizardsFronts"] instance=ExtResource("2_jui5v")]
+position = Vector2(136, 902)
+scale = Vector2(0.34784, 0.34784)
+
+[node name="Insight" parent="Wizards HUD/HUD/Orion" index="0" groups=["Insight"]]
+
+[node name="Age" parent="Wizards HUD/HUD/Orion" index="1" groups=["Age"]]
+
+[node name="Corruption" parent="Wizards HUD/HUD/Orion" index="2" groups=["Corruption"]]
+
+[node name="Corruption" parent="Wizards HUD/HUD/Orion/Corruption" index="3"]
+metadata/_edit_use_anchors_ = true
+
+[node name="Toxicity" parent="Wizards HUD/HUD/Orion" index="3" groups=["Toxicity"]]
+
+[node name="Gear" parent="Wizards HUD/HUD/Orion" index="4" groups=["Gear"]]
+
+[node name="Firefist" parent="Wizards HUD/HUD" groups=["WizardsFronts"] instance=ExtResource("2_jui5v")]
+position = Vector2(136, 542)
+scale = Vector2(0.34784, 0.34784)
+
+[node name="Solstice" parent="Wizards HUD/HUD" groups=["WizardsFronts"] instance=ExtResource("2_jui5v")]
+position = Vector2(136, 173)
+scale = Vector2(0.34784, 0.34784)
+
+[node name="Terra" parent="Wizards HUD/HUD" groups=["WizardsFronts"] instance=ExtResource("2_jui5v")]
+position = Vector2(1774, 543)
+scale = Vector2(0.34784, 0.34784)
+
+[node name="Alice" parent="Wizards HUD/HUD" groups=["WizardsFronts"] instance=ExtResource("2_jui5v")]
+position = Vector2(1774, 173)
+scale = Vector2(0.34784, 0.34784)
+
+[node name="Nox" parent="Wizards HUD/HUD" groups=["WizardsFronts"] instance=ExtResource("2_jui5v")]
+position = Vector2(1773, 902)
+scale = Vector2(0.34784, 0.34784)
+
+[node name="Corruption" parent="Wizards HUD/HUD/Nox/Corruption" index="3"]
+metadata/_edit_use_anchors_ = true
+
+[node name="Fun Number" type="Node2D" parent="Wizards HUD/HUD"]
+
+[node name="Fun Back" type="Sprite2D" parent="Wizards HUD/HUD/Fun Number"]
+position = Vector2(960, 1017)
+scale = Vector2(0.178341, 0.178341)
+texture = ExtResource("2_t3x6g")
+
+[node name="Fun Number" type="Label" parent="Wizards HUD/HUD/Fun Number"]
+offset_left = 913.0
+offset_top = 934.0
+offset_right = 1008.0
+offset_bottom = 1097.0
+theme_override_colors/font_color = Color(0.807429, 0.455845, 0.0933182, 1)
+theme_override_colors/font_outline_color = Color(0.94902, 0.580392, 0.254902, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("3_66ggb")
+theme_override_font_sizes/font_size = 80
+text = "00"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("4_abwd4")
+
+[node name="FNPlus" type="Button" parent="Wizards HUD/HUD/Fun Number"]
+offset_left = 1017.0
+offset_top = 1001.0
+offset_right = 1035.0
+offset_bottom = 1032.0
+text = "+"
+
+[node name="FNSub" type="Button" parent="Wizards HUD/HUD/Fun Number"]
+offset_left = 885.0
+offset_top = 1001.0
+offset_right = 903.0
+offset_bottom = 1032.0
+text = "-"
+
+[node name="Save & Load" type="Node2D" parent="Wizards HUD"]
+
+[node name="save" type="Button" parent="Wizards HUD/Save & Load"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 798.0
+offset_top = -573.0
+offset_right = 871.0
+offset_bottom = -523.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 30
+text = "save"
+
+[node name="load" type="Button" parent="Wizards HUD/Save & Load"]
+offset_left = 879.0
+offset_top = -573.0
+offset_right = 952.0
+offset_bottom = -523.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 30
+text = "load"
+
+[node name="Node" type="Node" parent="."]
+
+[node name="SaverLoader" type="Node" parent="Node"]
+script = ExtResource("3_ch1lc")
+
+[connection signal="pressed" from="Wizards HUD/HUD/Fun Number/FNPlus" to="Wizards HUD/HUD/Fun Number/Fun Number" method="_on_fn_plus_pressed"]
+[connection signal="pressed" from="Wizards HUD/HUD/Fun Number/FNSub" to="Wizards HUD/HUD/Fun Number/Fun Number" method="_on_fn_sub_pressed"]
+[connection signal="pressed" from="Wizards HUD/Save & Load/save" to="Node/SaverLoader" method="_on_save_pressed"]
+[connection signal="pressed" from="Wizards HUD/Save & Load/load" to="Wizards HUD/HUD/Orion/PlayerName" method="_on_load_pressed"]
+[connection signal="pressed" from="Wizards HUD/Save & Load/load" to="Wizards HUD/HUD/Firefist/PlayerName" method="_on_load_pressed"]
+[connection signal="pressed" from="Wizards HUD/Save & Load/load" to="Wizards HUD/HUD/Solstice/PlayerName" method="_on_load_pressed"]
+[connection signal="pressed" from="Wizards HUD/Save & Load/load" to="Wizards HUD/HUD/Terra/PlayerName" method="_on_load_pressed"]
+[connection signal="pressed" from="Wizards HUD/Save & Load/load" to="Wizards HUD/HUD/Alice/PlayerName" method="_on_load_pressed"]
+[connection signal="pressed" from="Wizards HUD/Save & Load/load" to="Wizards HUD/HUD/Nox/PlayerName" method="_on_load_pressed"]
+[connection signal="pressed" from="Wizards HUD/Save & Load/load" to="Node/SaverLoader" method="_on_load_pressed"]
+
+[editable path="Wizards HUD/HUD/Orion"]
+[editable path="Wizards HUD/HUD/Firefist"]
+[editable path="Wizards HUD/HUD/Solstice"]
+[editable path="Wizards HUD/HUD/Terra"]
+[editable path="Wizards HUD/HUD/Alice"]
+[editable path="Wizards HUD/HUD/Nox"]
