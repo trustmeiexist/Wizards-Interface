@@ -130,6 +130,10 @@ func save_game() -> void:
 	saved_game.funNumber.append(fun_number.funNumber)
 	#Fun number save
 	
+	var dir = DirAccess.open("user://")
+	dir.copy("user://savegame.tres", "user://savegamebackup.tres")
+	#Backup System
+	
 	ResourceSaver.save(saved_game, "user://savegame.tres")
 	
 func load_game() -> void:

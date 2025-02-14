@@ -1,2 +1,3 @@
 res://wizardslabeltest.tscn
 res://wizards_front.tscn
+res://Scripts/saver_loader.gd
