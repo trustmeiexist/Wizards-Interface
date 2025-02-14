@@ -1,3 +1,6 @@
 res://wizardslabeltest.tscn
 res://wizards_front.tscn
 res://Scripts/saver_loader.gd
+res://Scripts/bonds_bar.gd
+res://saved_games/saved_game.gd
+res://Scripts/deez_nuts_number.gd

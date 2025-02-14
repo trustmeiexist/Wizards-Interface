@@ -1,19 +1,22 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1739549649
+::res://::1739550488
 Candara.ttf::FontFile::5258062408042263109::1575709717::1737823313::1::::<><>::
 export_presets.cfg::TextFile::-1::1739143805::0::1::::<><>::
 hud.gd::GDScript::-1::1738100983::0::1::::<>CanvasLayer<>::
 icon.svg::CompressedTexture2D::6034011248646838633::1737771501::1737771509::1::::<><>::
 Riseria-Regular.ttf::FontFile::5924082117600651150::1738362438::1738362453::1::::<><>::
-wizardslabeltest.tscn::PackedScene::4397783189132060634::1739548126::0::1::::<><>::uid://dnqe4ldx4jcnu::::res://wizards_front.tscn<>uid://db866ixjdmyqj::::res://Images/wizardsProfilesFunCounter.png<>uid://cqnw1curef2mc::::res://Riseria-Regular.ttf<>res://Scripts/saver_loader.gd<>res://Scripts/fun_number.gd
-wizards_front.tscn::PackedScene::8105042301908378254::1739548126::0::1::::<><>::uid://q6udiadvanrh::::res://Images/wizardsProfileBarsHUDFront1.png<>uid://obqcu1v134i3::::res://Images/Insight Age Images/wizardsProfileInsightProgress.png<>uid://bffu0yptkymx1::::res://Images/Insight Age Images/wizardsProfileInsightBack.png<>uid://boa3cjxaq8kqc::::res://Images/Extras Images/wizardsInterfaceEclipse.png<>res://Scripts/insight_bar.gd<>uid://cg6brwyih042d::::res://Candara.ttf<>res://Scripts/insight_bar_con.gd<>res://Scripts/Insight.gd<>res://Scripts/age_bar.gd<>res://Scripts/Age.gd<>uid://dj4dontgvjgwq::::res://Images/Stars Images/wizardsProfileStarsBack.png<>uid://d2ovqjperilux::::res://Images/Stars Images/wizardsProfileStarsFront.png<>uid://b37fdss652iwb::::res://Images/Stars Images/wizardsProfileStarsProgress.png<>res://Scripts/corruption_bar.gd<>uid://gjok3eudfsvg::::res://Images/Stars Images/wizardsProfileStarsCircleBack.png<>uid://c1o7ayc3dg44j::::res://Images/Extras Images/wizardsInterfaceEyes.png<>uid://dsyav8rewcscr::::res://Images/Stars Images/wizardsProfileStarsCircleProgress.png<>res://Scripts/corruption_bar_circle.gd<>res://Scripts/corruption_bar_pur.gd<>res://Scripts/Corruption.gd<>uid://cbywvpi6rw8br::::res://Images/Potion Images/wizardsProfilePotionBack.png<>uid://b4navqcvjdrlh::::res://Images/Potion Images/wizardsProfilePotionFront.png<>uid://c1h8pg7r0bs1r::::res://Images/Potion Images/wizardsProfilePotionProgress.png<>uid://c4q7l883g7vkq::::res://Images/Extras Images/wizardsInterfaceCrown.png<>res://Scripts/toxicity_bar.gd<>res://Scripts/Toxicity.gd<>uid://by5sdk7my8jmk::::res://Images/Gear Images/wizardsProfileGearBack.png<>res://Scripts/toxicity_bar_dom.gd<>uid://csciwh8n27dei::::res://Images/Gear Images/wizardsProfileGearProgress.png<>res://Scripts/gear_bar.gd<>res://Scripts/playerNameChanger.gd<>res://Scripts/deez_nuts_number.gd
-::res://Images/::1738363048
+wizardslabeltest.tscn::PackedScene::4397783189132060634::1739550488::0::1::::<><>::uid://dnqe4ldx4jcnu::::res://wizards_front.tscn<>uid://db866ixjdmyqj::::res://Images/wizardsProfilesFunCounter.png<>uid://cqnw1curef2mc::::res://Riseria-Regular.ttf<>res://Scripts/saver_loader.gd<>res://Scripts/fun_number.gd
+wizards_front.tscn::PackedScene::8105042301908378254::1739550488::0::1::::<><>::uid://q6udiadvanrh::::res://Images/wizardsProfileBarsHUDFront1.png<>uid://obqcu1v134i3::::res://Images/Insight Age Images/wizardsProfileInsightProgress.png<>uid://bffu0yptkymx1::::res://Images/Insight Age Images/wizardsProfileInsightBack.png<>uid://boa3cjxaq8kqc::::res://Images/Extras Images/wizardsInterfaceEclipse.png<>res://Scripts/insight_bar.gd<>uid://cg6brwyih042d::::res://Candara.ttf<>res://Scripts/insight_bar_con.gd<>res://Scripts/Insight.gd<>res://Scripts/age_bar.gd<>res://Scripts/Age.gd<>uid://dj4dontgvjgwq::::res://Images/Stars Images/wizardsProfileStarsBack.png<>uid://d2ovqjperilux::::res://Images/Stars Images/wizardsProfileStarsFront.png<>uid://b37fdss652iwb::::res://Images/Stars Images/wizardsProfileStarsProgress.png<>res://Scripts/corruption_bar.gd<>uid://gjok3eudfsvg::::res://Images/Stars Images/wizardsProfileStarsCircleBack.png<>uid://c1o7ayc3dg44j::::res://Images/Extras Images/wizardsInterfaceEyes.png<>uid://dsyav8rewcscr::::res://Images/Stars Images/wizardsProfileStarsCircleProgress.png<>res://Scripts/corruption_bar_circle.gd<>res://Scripts/corruption_bar_pur.gd<>res://Scripts/Corruption.gd<>uid://cbywvpi6rw8br::::res://Images/Potion Images/wizardsProfilePotionBack.png<>uid://b4navqcvjdrlh::::res://Images/Potion Images/wizardsProfilePotionFront.png<>uid://c1h8pg7r0bs1r::::res://Images/Potion Images/wizardsProfilePotionProgress.png<>uid://c4q7l883g7vkq::::res://Images/Extras Images/wizardsInterfaceCrown.png<>res://Scripts/toxicity_bar.gd<>res://Scripts/Toxicity.gd<>uid://by5sdk7my8jmk::::res://Images/Gear Images/wizardsProfileGearBack.png<>res://Scripts/toxicity_bar_dom.gd<>uid://csciwh8n27dei::::res://Images/Gear Images/wizardsProfileGearProgress.png<>res://Scripts/gear_bar.gd<>res://Scripts/playerNameChanger.gd<>res://Scripts/deez_nuts_number.gd
+::res://Images/::1739551970
 wizardsProfileBarsHUDFront1.png::CompressedTexture2D::1188237326172601261::1738169982::1738169982::1::::<><>::
 wizardsProfileBarsHUDFront.png::CompressedTexture2D::8170339366978544001::1738074380::1738074695::1::::<><>::
 wizardsProfileBarsHUDFrontBubbles.png::CompressedTexture2D::6097341007573735776::1738074459::1738074695::1::::<><>::
 wizardsProfileBarsHUDFrontJar.png::CompressedTexture2D::7079219272119526293::1738074426::1738074695::1::::<><>::
 wizardsProfileBarsHUDFrontStars.png::CompressedTexture2D::2438522006964537297::1738074440::1738074695::1::::<><>::
 wizardsProfilesFunCounter.png::CompressedTexture2D::7299513403118850809::1738363048::1738363048::1::::<><>::
+::res://Images/Bonds Images/::1739551998
+wizardsProfilesBondsHearts.png::CompressedTexture2D::7269998554955449436::1739551998::1739551998::1::::<><>::
+wizardsProfilesBondsHeartsBackground.png::CompressedTexture2D::2572337318633191271::1739551998::1739551998::1::::<><>::
 ::res://Images/Extras Images/::1738601883
 wizardsInterfaceCrown.png::CompressedTexture2D::6843312249986171096::1738175230::1738175235::1::::<><>::
 wizardsInterfaceEclipse.png::CompressedTexture2D::3370768650274168594::1738176397::1738176397::1::::<><>::
@@ -40,7 +43,7 @@ wizardsProfileStarsFront.png::CompressedTexture2D::9084566243500593275::17380784
 wizardsProfileStarsProgress.png::CompressedTexture2D::4418078310709909157::1738078436::1738078436::1::::<><>::
 ::res://saved_games/::1739547896
 saved_game.gd::GDScript::-1::1739547896::0::1::::SavedGame<>Resource<>::
-::res://Scripts/::1739548125
+::res://Scripts/::1739550436
 Age.gd::GDScript::-1::1738114105::0::1::::<>Label<>::
 age_bar.gd::GDScript::-1::1738109029::0::1::::<>TextureProgressBar<>::
 Corruption.gd::GDScript::-1::1738169447::0::1::::<>Label<>::
@@ -54,7 +57,7 @@ Insight.gd::GDScript::-1::1738109049::0::1::::<>Label<>::
 insight_bar.gd::GDScript::-1::1738109084::0::1::::<>TextureProgressBar<>::
 insight_bar_con.gd::GDScript::-1::1738177300::0::1::::<>TextureProgressBar<>::
 playerNameChanger.gd::GDScript::-1::1738600314::0::1::::<>LineEdit<>::
-saver_loader.gd::GDScript::-1::1739548125::0::1::::<>Node<>::
+saver_loader.gd::GDScript::-1::1739550436::0::1::::<>Node<>::
 Toxicity.gd::GDScript::-1::1738169500::0::1::::<>Label<>::
 toxicity_bar.gd::GDScript::-1::1738108782::0::1::::<>TextureProgressBar<>::
 toxicity_bar_dom.gd::GDScript::-1::1738177173::0::1::::<>TextureProgressBar<>::

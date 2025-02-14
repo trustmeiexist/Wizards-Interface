@@ -56,6 +56,14 @@ extends Node
 @onready var noxDeez: Label = $"../../Wizards HUD/HUD/Nox/Deez Nuts/Deez Nuts Number"
 #Deez nuts import
 
+@onready var orionBonds: TextureProgressBar = $"../../Wizards HUD/HUD/Orion/Bonds/Bonds Bar"
+@onready var firefistBonds: TextureProgressBar = $"../../Wizards HUD/HUD/Firefist/Bonds/Bonds Bar"
+@onready var solsticeBonds: TextureProgressBar = $"../../Wizards HUD/HUD/Solstice/Bonds/Bonds Bar"
+@onready var terraBonds: TextureProgressBar = $"../../Wizards HUD/HUD/Terra/Bonds/Bonds Bar"
+@onready var aliceBonds: TextureProgressBar = $"../../Wizards HUD/HUD/Alice/Bonds/Bonds Bar"
+@onready var noxBonds: TextureProgressBar = $"../../Wizards HUD/HUD/Nox/Bonds/Bonds Bar"
+#Bonds bar import
+
 @onready var fun_number: Label = $"../../Wizards HUD/HUD/Fun Number/Fun Number"
 #Fun number import
 
@@ -125,7 +133,15 @@ func save_game() -> void:
 	saved_game.deezNuts.append(terraDeez.deez)
 	saved_game.deezNuts.append(aliceDeez.deez)
 	saved_game.deezNuts.append(noxDeez.deez)
-	#Player names save
+	#Deez nuts save
+	
+	saved_game.bondsSave.append(orionBonds.bonds)
+	saved_game.bondsSave.append(firefistBonds.bonds)
+	saved_game.bondsSave.append(solsticeBonds.bonds)
+	saved_game.bondsSave.append(terraBonds.bonds)
+	saved_game.bondsSave.append(aliceBonds.bonds)
+	saved_game.bondsSave.append(noxBonds.bonds)
+	#Bond bar saves
 	
 	saved_game.funNumber.append(fun_number.funNumber)
 	#Fun number save
@@ -202,6 +218,14 @@ func load_game() -> void:
 	aliceDeez.deez = saved_game.deezNuts[4]
 	noxDeez.deez = saved_game.deezNuts[5]
 	#Deez nuts load
+	
+	orionBonds.bonds = saved_game.bondsSave[0]
+	firefistBonds.bonds = saved_game.bondsSave[1]
+	solsticeBonds.bonds = saved_game.bondsSave[2]
+	terraBonds.bonds = saved_game.bondsSave[3]
+	aliceBonds.bonds = saved_game.bondsSave[4]
+	noxBonds.bonds = saved_game.bondsSave[5]
+	#Bonds bar load
 	
 	fun_number.funNumber = saved_game.funNumber[0]
 

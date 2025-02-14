@@ -1,4 +1,5 @@
 Button
+TextureProgressBar
 Node2D
 Sprite2D
 Label
@@ -8,7 +9,6 @@ Node
 Area2D
 CollisionShape2D
 MenuButton
-TextureProgressBar
 ProgressBar
 Polygon2D
 CanvasLayer

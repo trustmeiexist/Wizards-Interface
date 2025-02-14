@@ -9,4 +9,5 @@ extends Resource
 @export var gear:Array[int] = []
 @export var playerNames:Array[String] = []
 @export var deezNuts:Array[int] = []
+@export var bondsSave:Array[int] = []
 @export var funNumber:Array[int] = []
