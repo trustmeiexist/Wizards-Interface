@@ -47,3 +47,7 @@ renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
 environment/defaults/default_clear_color=Color(0.301961, 0.301961, 0.301961, 0)
 viewport/transparent_background=true
+
+[very_simple_twitch]
+
+config/client_id="gp91nh9qp2gnbnlegnr81ty2woinn0"
